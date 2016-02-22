@@ -20,14 +20,6 @@ namespace CAC_WP
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    /// 
-
-
-
-
-
-    // Hallooolee kleiner Alex!
-    //hi bissi größerer Luki!!
     public sealed partial class MainPage : Page
     {
         public MainPage()
