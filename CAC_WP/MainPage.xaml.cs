@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
+
+    //Tesrt von Sven!!!
+
 namespace CAC_WP
 {
     /// <summary>
