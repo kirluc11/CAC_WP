@@ -27,6 +27,7 @@ namespace CAC_WP
 
 
     // Hallooolee kleiner Alex!
+    //hi bissi größerer Luki!!
     public sealed partial class MainPage : Page
     {
         public MainPage()
