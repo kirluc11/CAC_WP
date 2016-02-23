@@ -26,6 +26,11 @@ namespace CAC_WP
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            tbStatus.FontSize = 25;
+            //tbStatus.HorizontalAlignment = HorizontalAlignment.Center;
+            tbStatus.TextAlignment = TextAlignment.Center;
+            tbStatus.VerticalAlignment = VerticalAlignment.Center;
         }
 
         /// <summary>
@@ -33,6 +38,9 @@ namespace CAC_WP
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
+        /// 
+
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // TODO: Prepare page for display here.
@@ -42,6 +50,11 @@ namespace CAC_WP
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private void onSettings(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Settings));
         }
     }
 }

@@ -9,6 +9,25 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="Assets/logo.jpg" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0"></Image>
+        <TextBlock x:Name="tbStatus" Text="STATUS" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"></TextBlock>
+
+
+        <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button x:Name="btRemoteConfig" Content="Configure remote control" HorizontalAlignment="Right"></Button>
+            <Button x:Name="btSettings" Content="Settings" HorizontalAlignment="Stretch" Click="onSettings"></Button>
+        </StackPanel>
+
 
     </Grid>
 </Page>
