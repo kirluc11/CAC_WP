@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,13 +25,14 @@ namespace CAC_WP
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            tbStatus.FontSize = 25;
-            tbStatus.TextAlignment = TextAlignment.Center;
-            tbStatus.VerticalAlignment = VerticalAlignment.Center;
+            //to get strings from the Resources.resw file:
+            var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+            string s = loader.GetString("MainPage_Settings.Content"); //<-- this line works only without the .Content ... I don't know why.....
         }
+
+
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -44,16 +46,19 @@ namespace CAC_WP
         {
             // TODO: Prepare page for display here.
 
-            // TODO: If your application contains multiple pages, ensure that you are
-            // handling the hardware Back button by registering for the
-            // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
-            // If you are using the NavigationHelper provided by some templates,
-            // this event is handled for you.
+            tbStatus.FontSize = 25;
+            tbStatus.TextAlignment = TextAlignment.Center;
+            tbStatus.VerticalAlignment = VerticalAlignment.Center;
         }
 
         private void onSettings(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Settings));
+        }
+
+        private void onConfig(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(RemoteConfig));
         }
     }
 }
