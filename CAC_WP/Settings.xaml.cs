@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -46,6 +47,40 @@ namespace CAC_WP
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private async void onToGerman(object sender, RoutedEventArgs e)
+        {
+            MessageDialog m = new MessageDialog("Wir schließen die App jetzt.\nNach einem Neustart ist die Sprache geändert.", "Bis bald!");
+            m.Commands.Add(new UICommand("Schließen"));
+            m.Commands.Add(new UICommand("Nichts tun"));
+            var result = await m.ShowAsync();
+            if (result.Label == "Schließen")
+            {
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de-AT";
+                Application.Current.Exit();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private async void onToEnglish(object sender, RoutedEventArgs e)
+        {
+            MessageDialog m = new MessageDialog("We close the app now.\nAfter restarting you'll see the new language.", "See you soon!");
+            m.Commands.Add(new UICommand("Close"));
+            m.Commands.Add(new UICommand("Do nothing"));
+            var result=await m.ShowAsync();
+            if(result.Label == "Close")
+            {
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "en-US";
+                Application.Current.Exit();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

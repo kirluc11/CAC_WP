@@ -21,8 +21,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Uid="Settings_Ger" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch"></Button>
-        <Button x:Uid="Settings_Eng" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch"></Button>
+        <Button x:Uid="Settings_Ger" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" Click="onToGerman"></Button>
+        <Button x:Uid="Settings_Eng" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Click="onToEnglish"></Button>
 
         <Button x:Uid="Settings_BTonoff" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Stretch"></Button>
         <Button x:Uid="Settings_BTmakeDisc" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Stretch"></Button>
