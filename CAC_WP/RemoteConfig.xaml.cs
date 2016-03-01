@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -45,6 +46,24 @@ namespace CAC_WP
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private async void onAdd(object sender, RoutedEventArgs e)
+        {
+            MessageDialog m = new MessageDialog("test", "test");
+            m.Commands.Add(new UICommand("Close"));
+            m.Commands.Add(new UICommand("Do nothing"));
+            var result = await m.ShowAsync();
+        }
+
+        private void onRename(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onDelete(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

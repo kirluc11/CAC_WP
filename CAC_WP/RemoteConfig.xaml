@@ -21,19 +21,19 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Button HorizontalAlignment="Stretch">
-            <StackPanel>
+        <Button HorizontalAlignment="Stretch" Click="onAdd">
+            <StackPanel Orientation="Horizontal">
                 <Image Source="Assets/add.png" Width="20" Height="20"></Image>
                 <TextBlock x:Uid="RemoteConfig_Add"></TextBlock>
             </StackPanel>
         </Button>
-        <Button Grid.Column="1" HorizontalAlignment="Stretch">
+        <Button Grid.Column="1" HorizontalAlignment="Stretch" Click="onRename">
             <StackPanel>
                 <Image Source="Assets/edit.png" Width="20" Height="20"></Image>
                 <TextBlock x:Uid="RemoteConfig_Rename"></TextBlock>
             </StackPanel>
         </Button>
-        <Button Grid.Column="2" HorizontalAlignment="Stretch">
+        <Button Grid.Column="2" HorizontalAlignment="Stretch" Click="onDelete">
             <StackPanel>
                 <Image Source="Assets/delete.png" Width="20" Height="20"></Image>
                 <TextBlock x:Uid="RemoteConfig_Delete"></TextBlock>

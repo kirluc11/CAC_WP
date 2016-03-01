@@ -121,6 +121,10 @@
     <value>Fernbedienung konfigurieren</value>
     <comment>zum Fernbedienung Konfigurieren</comment>
   </data>
+  <data name="MainPage_ConfigRC.FontSize" xml:space="preserve">
+    <value>13</value>
+    <comment>Größe der Schrift am Button</comment>
+  </data>
   <data name="MainPage_Settings.Content" xml:space="preserve">
     <value>Einstellungen</value>
     <comment>zur Einstellungsseite</comment>
@@ -161,12 +165,12 @@
     <value>Geräte suchen</value>
     <comment>Nach Geräten suchen</comment>
   </data>
-  <data name="Settings_Eng.Content" xml:space="preserve">
-    <value>Englisch</value>
+  <data name="Settings_Eng.Text" xml:space="preserve">
+    <value>   Englisch</value>
     <comment>Appsprache auf Englisch stellen</comment>
   </data>
-  <data name="Settings_Ger.Content" xml:space="preserve">
-    <value>Deutsch</value>
+  <data name="Settings_Ger.Text" xml:space="preserve">
+    <value>   Deutsch</value>
     <comment>Appsprache auf Deutsch stellen</comment>
   </data>
 </root>
