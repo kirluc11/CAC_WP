@@ -32,7 +32,7 @@ namespace CAC_WP.BL
             functions[4] = f4;
         }
 
-        public void changeFunction(int number, Function function)
+        public void ChangeFunction(int number, Function function)
         {
             functions[number] = function;
         }

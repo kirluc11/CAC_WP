@@ -26,7 +26,7 @@ namespace CAC_WP.BL
             return instance;
         }
 
-        public new void execute()
+        public new void Execute()
         {
         }
     }

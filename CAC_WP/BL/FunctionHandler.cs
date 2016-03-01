@@ -24,7 +24,7 @@ namespace CAC_WP.BL
             return instance;
         }
 
-        public void addFunction(Function function)
+        public void AddFunction(Function function)
         {
             functions.AddLast(function);
         }

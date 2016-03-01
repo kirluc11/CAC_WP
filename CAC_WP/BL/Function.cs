@@ -11,7 +11,7 @@ namespace CAC_WP.BL
         private int id { get; set; }
         private String name { get; set; }
 
-        public void execute()
+        public void Execute()
         {
 
         }

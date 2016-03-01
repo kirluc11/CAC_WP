@@ -28,7 +28,7 @@ namespace CAC_WP.BL
             return instance;
         }
 
-        public void addProfile(Profile profile)
+        public void AddProfile(Profile profile)
         {
             if(!profiles.Contains(profile))
             {
@@ -36,12 +36,12 @@ namespace CAC_WP.BL
             }
         }
 
-        public void saveProfiles()
+        public void SaveProfiles()
         {
             //todo Save all profiles in one binary file
         }
 
-        public void loadProfiles()
+        public void LoadProfiles()
         {
             this.profiles.Clear();
 
