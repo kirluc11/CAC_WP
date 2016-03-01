@@ -89,6 +89,7 @@
     <Compile Include="BL\Function.cs" />
     <Compile Include="BL\FunctionHandler.cs" />
     <Compile Include="BL\NextFunction.cs" />
+    <Compile Include="BL\Profile.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
