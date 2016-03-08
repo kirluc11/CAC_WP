@@ -22,7 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <Button HorizontalAlignment="Stretch" Click="onAdd">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel>
                 <Image Source="Assets/add.png" Width="20" Height="20"></Image>
                 <TextBlock x:Uid="RemoteConfig_Add"></TextBlock>
             </StackPanel>
@@ -57,6 +57,6 @@
             <ComboBox x:Name="cbRechts" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"></ComboBox>
             <ComboBox x:Name="cbUnten" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"></ComboBox>
         </Grid>
-        <Button x:Uid="RemoteConfig_SaveExit" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Stretch"></Button>
+        <Button x:Uid="RemoteConfig_SaveExit" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Stretch" Click="onSaveAndExit"></Button>
     </Grid>
 </Page>

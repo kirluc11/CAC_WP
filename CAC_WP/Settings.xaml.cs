@@ -55,6 +55,12 @@ namespace CAC_WP
             {
                 btChangeToEnglish.IsEnabled = false;
             }
+
+
+            tbBTinfo.TextWrapping = TextWrapping.WrapWholeWords;
+            tbBTinfo.FontSize = 25;
+            tbBTinfo.TextAlignment = TextAlignment.Center;
+            tbBTinfo.VerticalAlignment = VerticalAlignment.Center;
         }
 
         private async void onToGerman(object sender, RoutedEventArgs e)
@@ -89,6 +95,11 @@ namespace CAC_WP
             {
                 return;
             }
+        }
+
+        private async void onOpenBTSettings(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-settings-bluetooth:"));
         }
     }
 }

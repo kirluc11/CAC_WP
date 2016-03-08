@@ -21,9 +21,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <!--<Button x:Uid="Settings_Ger" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" Click="onToGerman"></Button>-->
-        <!--<Button x:Uid="Settings_Eng" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Click="onToEnglish"></Button>-->
-
+       
         <Button x:Name="btChangeToGerman" HorizontalAlignment="Stretch" Click="onToGerman" Grid.Column="0" Grid.Row="0">
             <StackPanel Orientation="Horizontal">
                 <Image Source="Assets/oesterreich.png" Width="40"></Image>
@@ -38,11 +36,10 @@
             </StackPanel>
         </Button>
 
-
-        <Button x:Uid="Settings_BTonoff" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Stretch"></Button>
-        <Button x:Uid="Settings_BTmakeDisc" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Stretch"></Button>
-        <Button x:Uid="Settings_BTsearch" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Stretch"></Button>
+        <TextBlock x:Uid="Settings_BTinfo" x:Name="tbBTinfo" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"></TextBlock>
+        <Button x:Uid="Settings_BTonoff" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Stretch" Click="onOpenBTSettings"></Button>
+        
         <ListView x:Name="lvFoundBluetoothDevices" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"></ListView>
-        <!-- I used a ListView because scrolling is here already supported (compared to ListBox)-->
+        <!-- I used a ListView because scrolling is here already supported (compared with ListBox)-->
     </Grid>
 </Page>

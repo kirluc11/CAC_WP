@@ -44,16 +44,16 @@ namespace CAC_WP
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
+        /// 
+
+        
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
 
-        private async void onAdd(object sender, RoutedEventArgs e)
+        private void onAdd(object sender, RoutedEventArgs e)
         {
-            MessageDialog m = new MessageDialog("test", "test");
-            m.Commands.Add(new UICommand("Close"));
-            m.Commands.Add(new UICommand("Do nothing"));
-            var result = await m.ShowAsync();
+
         }
 
         private void onRename(object sender, RoutedEventArgs e)
@@ -64,6 +64,13 @@ namespace CAC_WP
         private void onDelete(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void onSaveAndExit(object sender, RoutedEventArgs e)
+        {
+            /*  Code to save profile  */
+
+            Frame.GoBack();
         }
     }
 }

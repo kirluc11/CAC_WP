@@ -50,6 +50,12 @@ namespace CAC_WP
             tbStatus.FontSize = 25;
             tbStatus.TextAlignment = TextAlignment.Center;
             tbStatus.VerticalAlignment = VerticalAlignment.Center;
+            tbStatus.TextWrapping = TextWrapping.WrapWholeWords;
+
+            tbDistance.FontSize = 25;
+            tbDistance.TextAlignment = TextAlignment.Center;
+            tbDistance.VerticalAlignment = VerticalAlignment.Center;
+            tbDistance.TextWrapping = TextWrapping.WrapWholeWords;
         }
 
         private void onSettings(object sender, RoutedEventArgs e)
