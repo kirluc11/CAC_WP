@@ -149,17 +149,13 @@
     <value>Speichern und Schließen</value>
     <comment>Alle Einstellungen speichern und Screen schließen</comment>
   </data>
-  <data name="Settings_BTmakeDisc.Content" xml:space="preserve">
-    <value>Sichtbar machen</value>
-    <comment>Handy für Bluetooth sichtbar machen</comment>
-  </data>
-  <data name="Settings_BTonoff.Content" xml:space="preserve">
-    <value>Bluetooth ein-/ausschalten</value>
-    <comment>Ein-/Ausschalten von Bluetooth</comment>
-  </data>
   <data name="Settings_BTsearch.Content" xml:space="preserve">
     <value>Geräte suchen</value>
     <comment>Nach Geräten suchen</comment>
+  </data>
+  <data name="Settings_BTSettings.Content" xml:space="preserve">
+    <value>Bluetooth Einstellungen öffnen</value>
+    <comment>Bluetooth Einstellungen öffnen</comment>
   </data>
   <data name="Settings_Eng.Content" xml:space="preserve">
     <value>Englisch</value>
