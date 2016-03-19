@@ -5,23 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Media.Playback;
 
-//using Microsoft.Phone.BackgroundAudio;
-
 namespace CAC_WP.BL
 {
-    class NextFunction : Function
+    class PauseFunction : Function
     {
-        private static NextFunction instance;
+        private static PauseFunction instance;
 
-        private NextFunction()
+        private PauseFunction()
         {
         }
 
-        public static NextFunction getInstance()
+        public static PauseFunction getInstance()
         {
-            if(instance == null)
+            if (instance == null)
             {
-                instance = new NextFunction();
+                instance = new PauseFunction();
             }
             return instance;
         }
@@ -29,7 +27,10 @@ namespace CAC_WP.BL
         public new void Execute()
         {
             MediaPlayer player = BackgroundMediaPlayer.Current;
-            
+            if(player.CanPause)
+            {
+                player.Pause();
+            }
         }
     }
 }

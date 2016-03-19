@@ -89,6 +89,9 @@
     <Compile Include="BL\Function.cs" />
     <Compile Include="BL\FunctionHandler.cs" />
     <Compile Include="BL\NextFunction.cs" />
+    <Compile Include="BL\PauseFunction.cs" />
+    <Compile Include="BL\PlayFunction.cs" />
+    <Compile Include="BL\PriviousFunction.cs" />
     <Compile Include="BL\Profile.cs" />
     <Compile Include="BL\ProfileHandler.cs" />
     <Compile Include="MainPage.xaml.cs">

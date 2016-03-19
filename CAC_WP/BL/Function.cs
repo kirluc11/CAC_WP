@@ -15,5 +15,9 @@ namespace CAC_WP.BL
         {
 
         }
+        private String toString()
+        {
+            return name;
+        }
     }
 }

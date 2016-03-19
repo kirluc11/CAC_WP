@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace CAC_WP.BL
 {
-    class ProfileHandler
+    
+    class ProfileHandler 
     {
-        // File
+        private string filePath = "profiles.txt";
 
         private static ProfileHandler instance;
 
@@ -16,7 +18,7 @@ namespace CAC_WP.BL
 
         private ProfileHandler()
         {
-
+            
         }
 
         public static ProfileHandler getInstance()
@@ -36,9 +38,9 @@ namespace CAC_WP.BL
             }
         }
 
-        public void SaveProfiles()
+        public async Task SaveProfiles()
         {
-            //todo Save all profiles in one binary file
+            //var serializer = new DataCotractSerializer(typeof(LinkedList<Profile>));
         }
 
         public void LoadProfiles()
