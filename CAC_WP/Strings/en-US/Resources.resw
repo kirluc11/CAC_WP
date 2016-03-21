@@ -126,7 +126,7 @@
     <comment>Größe der Schrift am Button</comment>
   </data>
   <data name="MainPage_Distance.Text" xml:space="preserve">
-    <value>To show the distance, please connect with a Bluetooth device.</value>
+    <value>To show the distance, please make sure to be connected with a Bluetooth device.</value>
     <comment>Entfernung zum Bluetooth Gerät</comment>
   </data>
   <data name="MainPage_Settings.Content" xml:space="preserve">

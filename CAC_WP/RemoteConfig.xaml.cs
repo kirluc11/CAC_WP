@@ -49,6 +49,7 @@ namespace CAC_WP
         
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            btDelete.IsEnabled = false;
         }
 
         private void onAdd(object sender, RoutedEventArgs e)
