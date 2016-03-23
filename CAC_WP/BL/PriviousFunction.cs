@@ -27,7 +27,6 @@ namespace CAC_WP.BL
         public new void Execute()
         {
             MediaPlayer player = BackgroundMediaPlayer.Current;
-
         }
     }
 }
