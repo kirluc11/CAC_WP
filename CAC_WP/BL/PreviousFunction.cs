@@ -7,19 +7,19 @@ using Windows.Media.Playback;
 
 namespace CAC_WP.BL
 {
-    class PriviousFunction : Function
+    class PreviousFunction : Function
     {
-        private static PriviousFunction instance;
+        private static PreviousFunction instance;
 
-        private PriviousFunction()
+        private PreviousFunction()
         {
         }
 
-        public static PriviousFunction getInstance()
+        public static PreviousFunction getInstance()
         {
             if (instance == null)
             {
-                instance = new PriviousFunction();
+                instance = new PreviousFunction();
             }
             return instance;
         }
