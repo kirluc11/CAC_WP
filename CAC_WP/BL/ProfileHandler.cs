@@ -37,17 +37,5 @@ namespace CAC_WP.BL
                 profiles.AddLast(profile);
             }
         }
-
-        public async Task SaveProfiles()
-        {
-            //var serializer = new DataCotractSerializer(typeof(LinkedList<Profile>));
-        }
-
-        public void LoadProfiles()
-        {
-            this.profiles.Clear();
-
-            //todo Load all profiles from one binary file
-        }
     }
 }
