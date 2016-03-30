@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -43,8 +44,34 @@ namespace CAC_WP
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
+        /// 
+
+        
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            btDelete.IsEnabled = false;
+        }
+
+        private void onAdd(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onRename(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onDelete(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onSaveAndExit(object sender, RoutedEventArgs e)
+        {
+            /*  Code to save profile  */
+
+            Frame.GoBack();
         }
     }
 }

@@ -121,16 +121,24 @@
     <value>Configure remote control</value>
     <comment>zum Fernbedienung Konfigurieren</comment>
   </data>
+  <data name="MainPage_ConfigRC.FontSize" xml:space="preserve">
+    <value>15</value>
+    <comment>Größe der Schrift am Button</comment>
+  </data>
+  <data name="MainPage_Distance.Text" xml:space="preserve">
+    <value>To show the distance, please make sure to be connected with a Bluetooth device.</value>
+    <comment>Entfernung zum Bluetooth Gerät</comment>
+  </data>
   <data name="MainPage_Settings.Content" xml:space="preserve">
     <value>Settings</value>
     <comment>zur Einstellungsseite</comment>
   </data>
   <data name="MainPage_Status.Text" xml:space="preserve">
-    <value>Status</value>
+    <value>Currently is no device connected.</value>
     <comment>nur zum Testen</comment>
   </data>
   <data name="RemoteConfig_Add.Text" xml:space="preserve">
-    <value>Add</value>
+    <value>  Add</value>
     <comment>Profil hinzufügen</comment>
   </data>
   <data name="RemoteConfig_ChooseProfile.PlaceholderText" xml:space="preserve">
@@ -149,20 +157,28 @@
     <value>Save and Exit</value>
     <comment>Alle Einstellungen speichern und Screen schließen</comment>
   </data>
+  <data name="Settings_BTinfo.Text" xml:space="preserve">
+    <value>Manage everything concerning Bluetooth in the system preferences.</value>
+    <comment>Info für Bluetooth</comment>
+  </data>
+  <data name="Settings_BTmakeDisc.Content" xml:space="preserve">
+    <value>Make Discoverable</value>
+    <comment>Handy für Bluetooth sichtbar machen</comment>
+  </data>
+  <data name="Settings_BTonoff.Content" xml:space="preserve">
+    <value>Open Bluetooth settings</value>
+    <comment>Ein-/Ausschalten von Bluetooth</comment>
+  </data>
   <data name="Settings_BTsearch.Content" xml:space="preserve">
     <value>Search Devices</value>
     <comment>Nach Geräten suchen</comment>
   </data>
-  <data name="Settings_BTSettings.Content" xml:space="preserve">
-    <value>Open Bluetooth Settings</value>
-    <comment>Bluetooth Einstellungs Screen Öffnen</comment>
-  </data>
-  <data name="Settings_Eng.Content" xml:space="preserve">
-    <value>English</value>
+  <data name="Settings_Eng.Text" xml:space="preserve">
+    <value>   English</value>
     <comment>Appsprache auf Englisch stellen</comment>
   </data>
-  <data name="Settings_Ger.Content" xml:space="preserve">
-    <value>German</value>
+  <data name="Settings_Ger.Text" xml:space="preserve">
+    <value>   German</value>
     <comment>Appsprache auf Deutsch stellen</comment>
   </data>
 </root>

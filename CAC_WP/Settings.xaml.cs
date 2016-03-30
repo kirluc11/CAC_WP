@@ -47,15 +47,29 @@ namespace CAC_WP
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if(Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "de-AT")
+            {
+                btChangeToGerman.IsEnabled = false;
+            }
+            else
+            {
+                btChangeToEnglish.IsEnabled = false;
+            }
+
+
+            tbBTinfo.TextWrapping = TextWrapping.WrapWholeWords;
+            tbBTinfo.FontSize = 25;
+            tbBTinfo.TextAlignment = TextAlignment.Center;
+            tbBTinfo.VerticalAlignment = VerticalAlignment.Center;
         }
 
         private async void onToGerman(object sender, RoutedEventArgs e)
         {
             MessageDialog m = new MessageDialog("Wir schließen die App jetzt.\nNach einem Neustart ist die Sprache geändert.", "Bis bald!");
-            m.Commands.Add(new UICommand("Schließen"));
-            m.Commands.Add(new UICommand("Nichts tun"));
+            m.Commands.Add(new UICommand("schließen"));
+            m.Commands.Add(new UICommand("abbrechen"));
             var result = await m.ShowAsync();
-            if (result.Label == "Schließen")
+            if (result.Label == "schließen")
             {
                 Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "de-AT";
                 Application.Current.Exit();
@@ -69,10 +83,10 @@ namespace CAC_WP
         private async void onToEnglish(object sender, RoutedEventArgs e)
         {
             MessageDialog m = new MessageDialog("We close the app now.\nAfter restarting you'll see the new language.", "See you soon!");
-            m.Commands.Add(new UICommand("Close"));
-            m.Commands.Add(new UICommand("Do nothing"));
+            m.Commands.Add(new UICommand("close"));
+            m.Commands.Add(new UICommand("cancel"));
             var result=await m.ShowAsync();
-            if(result.Label == "Close")
+            if(result.Label == "close")
             {
                 Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "en-US";
                 Application.Current.Exit();
@@ -82,9 +96,10 @@ namespace CAC_WP
                 return;
             }
         }
-        private async void onBluetoothSettings(object sender, RoutedEventArgs e)
+
+        private async void onOpenBTSettings(object sender, RoutedEventArgs e)
         {
-            await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-settings-bluetooth:///"));
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-settings-bluetooth:"));
         }
     }
 }

@@ -121,12 +121,20 @@
     <value>Fernbedienung konfigurieren</value>
     <comment>zum Fernbedienung Konfigurieren</comment>
   </data>
+  <data name="MainPage_ConfigRC.FontSize" xml:space="preserve">
+    <value>13</value>
+    <comment>Größe der Schrift am Button</comment>
+  </data>
+  <data name="MainPage_Distance.Text" xml:space="preserve">
+    <value>Um die Entfernung anzuzeigen, verbinden Sie sich bitte mit einem Bluetoothgerät.</value>
+    <comment>Entfernung zum Bluetooth Gerät</comment>
+  </data>
   <data name="MainPage_Settings.Content" xml:space="preserve">
     <value>Einstellungen</value>
     <comment>zur Einstellungsseite</comment>
   </data>
   <data name="MainPage_Status.Text" xml:space="preserve">
-    <value>Status</value>
+    <value>Zurzeit mit keinem Gerät verbunden.</value>
     <comment>nur zum Testen</comment>
   </data>
   <data name="RemoteConfig_Add.Text" xml:space="preserve">
@@ -149,20 +157,28 @@
     <value>Speichern und Schließen</value>
     <comment>Alle Einstellungen speichern und Screen schließen</comment>
   </data>
+  <data name="Settings_BTinfo.Text" xml:space="preserve">
+    <value>Erledigen Sie alle Bluetooth-Angelegenheiten in den Systemeinstellungen.</value>
+    <comment>Info für Bluetooth</comment>
+  </data>
+  <data name="Settings_BTmakeDisc.Content" xml:space="preserve">
+    <value>Sichtbar machen</value>
+    <comment>Handy für Bluetooth sichtbar machen</comment>
+  </data>
+  <data name="Settings_BTonoff.Content" xml:space="preserve">
+    <value>Bluetootheinstellungen öffnen</value>
+    <comment>Ein-/Ausschalten von Bluetooth</comment>
+  </data>
   <data name="Settings_BTsearch.Content" xml:space="preserve">
     <value>Geräte suchen</value>
     <comment>Nach Geräten suchen</comment>
   </data>
-  <data name="Settings_BTSettings.Content" xml:space="preserve">
-    <value>Bluetooth Einstellungen öffnen</value>
-    <comment>Bluetooth Einstellungen öffnen</comment>
-  </data>
-  <data name="Settings_Eng.Content" xml:space="preserve">
-    <value>Englisch</value>
+  <data name="Settings_Eng.Text" xml:space="preserve">
+    <value>   Englisch</value>
     <comment>Appsprache auf Englisch stellen</comment>
   </data>
-  <data name="Settings_Ger.Content" xml:space="preserve">
-    <value>Deutsch</value>
+  <data name="Settings_Ger.Text" xml:space="preserve">
+    <value>   Deutsch</value>
     <comment>Appsprache auf Deutsch stellen</comment>
   </data>
 </root>

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using CAC_WP.BL;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Phone.UI.Input;
@@ -50,6 +52,12 @@ namespace CAC_WP
             tbStatus.FontSize = 25;
             tbStatus.TextAlignment = TextAlignment.Center;
             tbStatus.VerticalAlignment = VerticalAlignment.Center;
+            tbStatus.TextWrapping = TextWrapping.WrapWholeWords;
+
+            tbDistance.FontSize = 25;
+            tbDistance.TextAlignment = TextAlignment.Center;
+            tbDistance.VerticalAlignment = VerticalAlignment.Center;
+            tbDistance.TextWrapping = TextWrapping.WrapWholeWords;
         }
 
         private void onSettings(object sender, RoutedEventArgs e)
@@ -61,5 +69,6 @@ namespace CAC_WP
         {
             Frame.Navigate(typeof(RemoteConfig));
         }
+
     }
 }
